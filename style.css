@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue-color-light: #cfe0ff;
+  --blue-color-darker: #9abbf8;
+  --blue-color-darkest: #3e7ef5;
+
+  --light-color-green: #d8ffc4;
+  --pink-color-light: #dfc3bf;
+  --pink-color-darker: #f4b4d5;
+
+  --pink-color-lighter: #fff4ef;
+
+  --bottom-color: #ae8700;
+  --footer-color: #4e4948;
+  --background-color: #ffffff;
+  --body-font-family: "Lato", sans-serif;
+  --other-font-family: "Poppins", sans-serif;
+
+  --text-color-black: black;
+  --text-color-light: #333;
+
+  /*=====FONT SIZE=====*/
+  --biggest-font-size: 3.85rem;
+  --bigger-font-size: 3.25rem;
+  --big-font-size: 2.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --h4-font-size: 1.1rem;
+
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+  --text-line-height: 2rem;
+
+  -mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+
+  --box-shadow-big: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+  /*=====HEADER HIGHT=====*/
+  --header-height: 5rem;
+}
+
+
+
+@media screen and (min-width: 968px) {
+    :root {
+      --biggest-font-size: 7.5rem;
+      --bigger-font-size: 4.5rem;
+      --big-font-size: 4rem;
+      --h2-font-size: 1.5rem;
+      --h3-font-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+    }
+  }
+
+  @media screen and (max-width: 340px) {
+    :root {
+      --biggest-font-size: 4.5rem;
+      --bigger-font-size: 3rem;
+      --big-font-size: 2rem;
+      --h2-font-size: 1.1rem;
+      --h3-font-size: 1rem;
+      --h4-font-size: 0.93rem;
+  
+      --normal-font-size: 0.813rem;
+      --small-font-size: 0.75rem;
+      --smaller-font-size: 0.625rem;
+      --tiny-font-size: 0.5rem;
+      --text-line-height: 1.5rem;
+    }
+  }
+
+
+  /*=============== BASE ===============*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+main{
+    display: none;
+}
+footer{
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 3rem 0 0 0;
+    font-family: var(--body-font-family);
+    background-color: var(--pink-color-lighter);
+    color: var(--text-color-black);
+  }
+
+  h1,h2,h3,h4,h5,h6, span, small, p,a,ul,li {
+   
+    margin: 0;
+  
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
