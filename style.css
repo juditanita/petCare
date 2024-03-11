@@ -1044,8 +1044,19 @@ a.footer__logo {
   .about .button {
     margin-left: 5rem;
   }
+  .specs{
+   
+   max-width:900px;
+   width:100%;
+   margin:0 auto;
+   
+  }
   .specs__content {
     grid-template-columns: repeat(4, 1fr);
+    
+
+    width: 90%;
+    margin: 0 auto;
   }
   .feature__img_one {
     max-width: 100px;
