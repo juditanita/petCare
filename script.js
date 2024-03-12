@@ -7,10 +7,13 @@ navMenu=document.getElementById('nav-menu');
 
 navToggle.addEventListener('click',function(){
     navMenu.classList.toggle('show');
+    
 })
 navClose.addEventListener('click',function(){
     navMenu.classList.toggle('show');
+
 })
+
 
 // =========CLOSE THE MENU IF THE THE LINK IS CLICKED=========
 
@@ -31,12 +34,12 @@ for (let i=0; i<navLink.length; i++){
       
         let current=document.getElementsByClassName('active-link');
 
-        console.log(scrollY);
+      
         current[0].className=current[0].className.replace("active-link","");
       
+  
+this.className +=" active-link";
       
-
-        this.className +=" active-link";
     
         
         
