@@ -986,7 +986,7 @@ a.footer__logo {
     width: 350px;
   }
   .home__description {
-    width: 95vw;
+    width: 75vw;
     line-height: 180%;
     padding-inline: 1.5rem;
     margin-bottom: var(--mb-2-5);
@@ -1112,24 +1112,4 @@ a.footer__logo {
   }
 }
 
-/*====design system====*/
-.home-title {
-  font-size: var(--big-font-size);
-  color: var(--bottom-color);
-  text-align: center;
-  text-transform: capitalize;
-}
 
-.home-title-bigger {
-  font-size: var(--bigger-font-size);
-  color: var(--bottom-color);
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.home-title-biggest {
-  font-size: var(--biggest-font-size);
-  color: var(--bottom-color);
-  text-align: center;
-  text-transform: capitalize;
-}
