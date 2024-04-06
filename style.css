@@ -136,21 +136,22 @@ ul {
   position: relative;
   color: var(--bottom-color);
   text-align: center;
+  display: flex;
+  margin:0 3rem;
 }
 
+.section__title::before, .section__title::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.section__title::before {
+  margin-right: 40px
+}
 .section__title::after {
-  content: " ";
-  position: absolute;
-
-  bottom: -0.4rem;
-  left: 50%;
-  background: var(--bottom-color);
-  width: 0.4rem;
-  height: 0.4rem;
-  border-radius: 50%;
-  opacity: 0.7;
+  margin-left: 40px
 }
-
 /* 
 =============== SCROLL UP =============== */
 
@@ -302,6 +303,7 @@ p {
   font-weight: 600;
 
   padding: 0.5rem;
+  margin-right: 0.5rem;
   background-color: var(--blue-color-light);
 
   border: 3px solid var(--blue-color-darkest);
@@ -398,7 +400,7 @@ p {
 }
 .home__container {
   position: relative;
-
+margin-inline:auto;
   width: 100vw;
 }
 .home__data {
@@ -724,7 +726,12 @@ textarea.contact__input {
 }
 .contact__form {
   margin-left: 3rem;
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+
+
 }
+
 .contact__button {
   display: block;
 
@@ -935,6 +942,7 @@ a.footer__logo {
   }
   .contact__form {
     margin-top: var(--mb-2-5);
+  
   }
 }
 @media screen and (min-width: 540px) {
@@ -1107,9 +1115,10 @@ a.footer__logo {
     max-width: 100%;
   }
 
-  .contact__form {
-    width: 100%;
-    margin: 0 auto;
+  
+  .contact__form{
+    display: grid;
+    /* grid-template-columns:  */
   }
 }
 
